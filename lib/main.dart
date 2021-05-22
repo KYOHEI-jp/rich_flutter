@@ -5,13 +5,15 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           title: Text("I'm superman"),
-          backgroundColor: Colors.yellow,
+          backgroundColor: Colors.grey,
         ),
-        body: Image(
-          image: NetworkImage("http://www.horiyamanoie.com/wp-content/uploads/sites/29/2020/02/mount_fuji.jpg"),
+        body: Center(
+          child: Image(
+            image: AssetImage("images/diamond.png"),
+          ),
         ),
       ),
     ),
